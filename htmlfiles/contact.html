@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style-contact.css">
+</head>
+
+<body>
+    <footer>
+        <a style="color: whitesmoke;" href="index_Main.html"><span><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512">
+                    <path
+                        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                </svg></span></a>
+    </footer>
+    <form id="contactForm">
+        <div class="contact-section-1" id="contact-section-1-mycontact">
+            <h1>CONTACT <span> ME</span></h1><br><br>
+            <div class="for-box-contact">
+                <h2><span>CONTACT FOR CLIENT</span></h2><br><br>
+                <label class="name-box" for="name">Enter Name :-</label><!--label for name-->
+                <input type="text" id="name" name="text1" class="text-contact"><br><br>
+                <label for="number">Enter Phone No :-</label><!--label for phonenumber-->
+                <input type="text" id="email" class="phoneno-contact"><br><br>
+                <label for="email">Enter Email :-<label><!--label for Email-->
+                        <input type="text" id="age" name="email1" class="email-contact"><br><br>
+                        <label class="text-box" for="message">Message :-</label><!--label for message-->
+                        <textarea rows="1" cols="20" name="comment" form="usrform" class="textarea-contact"
+                            placeholder="GIVE ME MESSAGE" id="place"></textarea><br><br><br>
+                        <!-- <a href="" id="submit" type="submit">submit</a> -->
+                        <button type="submit"></button>
+            </div>
+        </div>
+    </form>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDPWErEfOWCcxuFVKLvvgY6bquPkYKeRlM",
+            authDomain: "prac8firebase-2eaec.firebaseapp.com",
+            projectId: "prac8firebase-2eaec",
+            storageBucket: "prac8firebase-2eaec.appspot.com",
+            databaseURL: "https://sbjain-2d7bf-default-rtdb.firebaseio.com/",
+            messagingSenderId: "579064204925",
+            appId: "1:579064204925:web:cd2e9a3de87bef00bfeb14",
+            measurementId: "G-YJ7SJXMY6C",
+        };
+        firebase.initializeApp(firebaseConfig);
+        var messageRef = firebase.database().ref("Employees");
+        document.getElementById("contactForm").addEventListener("submit", submitForm);
+        function submitForm() {
+            var name1 = document.getElementById("name").value;
+            var email1 = document.getElementById("email").value;
+            var age1 = document.getElementById("age").value;
+            var place1 = document.getElementById("place").value;
+            save(name1, email1, age1, place1);
+            document.getElementById("contactForm").reset();
+        }
+        function save(name1, email1, age1, place1) {
+            var newMessageRef = messageRef.push();
+            newMessageRef.set({
+                name: name1,
+                Phonenumber: email1,
+                email: age1,
+                message: place1,
+            });
+        }
+    </script>
+</body>
+
+</html>

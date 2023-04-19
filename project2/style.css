@@ -1,0 +1,97 @@
+/* universal selector  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* container class for header */
+.container-heading {
+  /* border: 2px solid red; */
+  background-color: aqua;
+  color: rgb(87, 86, 2);
+  padding: 5px;
+}
+
+/* Design to my button */
+.btn {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.click_me {
+  border: 2px solid rgb(10, 10, 10);
+  padding: 10px;
+  font: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 80%;
+}
+
+.click_me:hover {
+  background-color: aqua;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(87, 86, 2);
+  border: 3px solid rgb(87, 86, 2);
+}
+
+/* For creating my notes  */
+.create_note {
+  border: 2px solid rgb(7, 7, 7);
+  height: 250px;
+  width: 400px;
+  margin-bottom: 18px;
+  margin-left: 20px;
+}
+
+textarea{
+  /* border: 2px solid rgb(11, 11, 11); */
+  height: 202px;
+  width: 314px;
+  margin-left: 20px;
+  margin-top: -19px;
+  resize: none;
+  border: none;
+}
+textarea:focus{
+    outline: none;
+}
+
+.edit_me {
+  margin-left: 340px;
+  padding: 2px;
+  color: rgb(147, 239, 9);
+  background-color: rgb(4, 1, 14);
+}
+
+.delete_me {
+  padding: 2px;
+  margin-top: 20px;
+  padding-right: 2px;
+  color: rgb(250, 10, 10);
+  background-color: rgb(4, 1, 14);
+}
+
+.edit_me:hover{
+    color:rgb(17, 16, 16);
+    background-color: rgb(147, 239, 9);
+}
+
+.delete_me:hover{
+  color:rgb(17, 16, 16);
+  background-color: rgb(234, 61, 101);
+}
+
+.hidden{
+  display: none;
+}
+
+.main{
+  inline-size: 395px;
+  height: 200px;
+  overflow-wrap: break-word;
+}
+

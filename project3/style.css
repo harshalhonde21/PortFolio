@@ -1,0 +1,296 @@
+body {
+    background-color: rgb(197, 154, 214);
+}
+
+/* for navbar css */
+#container {
+    display: flex;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    padding: 15px;
+    position: sticky;
+}
+
+.item a {
+    text-decoration: none;
+    padding: 4px 25px;
+    font-size: 1.3rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 7px;
+    color: black;
+    border-radius: 4px;
+}
+
+a:hover {
+    box-shadow: 2px 5px 15px rgb(252, 4, 239);
+    font-size: 30px;
+    color: whitesmoke;
+    /* background-color: rgb(245, 245, 165); */
+    /* background-color: rgb(233, 218, 17);
+            border: 3px solid red; */
+}
+
+header::before {
+    background: url(https://www.planetfitness.com/sites/default/files/feature-image/xbreak-workout_602724.jpg.pagespeed.ic.v8byD7su-e.jpg) center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    height: 42%;
+    width: 100%;
+    opacity: 10;
+}
+
+.search {
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: 2px solid magenta; */
+}
+
+.button {
+    margin-left: 600px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    border: 2px solid red;
+    padding: 4px;
+    box-shadow: 3px 4px 6px blue;
+}
+
+p {
+    text-align: center;
+    padding: 32px;
+    margin-top: -36px;
+    color: rgb(255, 253, 253);
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#harshalanimation {
+    position: relative;
+    top: 50%;
+    width: 16em;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    white-space: nowrap;
+    /* color: green; */
+    transform: translateY(-50%);
+    overflow: hidden;
+    animation: typeWriter 4s steps(40) 1s 1 normal both,
+        blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typeWriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgb(227, 9, 242);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+#harshalanimation {
+    padding: 0px;
+    margin-top: 75px;
+    font-size: 48px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    margin-left: 110px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+#boxes {
+    display: flex;
+    margin: 30px;
+    margin-left: 20px;
+}
+
+#h2 {
+    /* align-items: center; */
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 33px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+/* #h2::before{
+            background: url("background.jpg")center center/cover;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            height: 62%;
+            width: 100%;
+            opacity: 0.7;
+        } */
+.box img {
+    height: 245px;
+    /* width: 200px; */
+    padding-bottom: -8px;
+}
+
+.boxx {
+    text-align: center;
+    margin: 11px;
+    margin-top: -6px;
+    padding-top: 3px;
+    /* align-items: center; */
+}
+
+.box:hover {
+    border: 2px solid red;
+    box-shadow: 3px 3px 20px magenta;
+    /* box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff; */
+}
+
+.aboutus-primary h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lucida Sans", " Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.aboutus-primary img {
+    border-radius: 10px;
+    height: 261px;
+    margin-left: 73px;
+    opacity: 50px;
+}
+
+.aboutus-primary img:hover {
+    border: 4px solid rgb(253, 77, 77);
+}
+
+.aboutus-primary p {
+    /* display: flex; */
+    /* border: 2px solid black; */
+    width: 633px;
+    /* flex-direction: column-reverse; */
+    margin-left: 683px;
+    margin-top: -251px;
+    font-size: 30px;
+}
+
+span {
+    font-weight: bold;
+}
+
+#button1 {
+    margin-left: 0px;
+    margin-top: 21px;
+    font-size: 30px;
+    padding-top: -15px;
+}
+
+.contantheading {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(48, 41, 41);
+}
+
+#contact-for-index {
+    border: 2px solid rgb(20, 20, 20);
+    position: relative;
+    height: 280px;
+    width: 210px;
+    padding-left: 28px;
+    padding-top: 25px;
+    margin-left: 920px;
+    margin-top: -308px;
+    background-color: rgb(249, 234, 219);
+}
+
+.boxcontact {
+    border: 2px solid black;
+    position: relative;
+    height: 304px;
+    width: 310px;
+    margin-left: 608px;
+    background: linear-gradient(90deg,
+            rgba(115, 0, 255, 1) 36%,
+            rgba(6, 223, 240, 1) 100%);
+}
+
+.boxcontact h3 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.boxcontact label {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.boxcontact p {
+    margin-top: -20px;
+    margin-left: -23px;
+    font-size: 23px;
+}
+
+.boxcontact h4 {
+    font-size: 25px;
+    font-weight: 10;
+    margin-top: -14px;
+    margin-left: 17px;
+}
+
+.contact1 {
+    margin-bottom: 10px;
+}
+
+button {
+    text-align: center;
+    margin-right: 54px;
+    margin-top: 27px;
+    margin-left: 30px;
+    font-size: 20px;
+    border: 2px solid rgb(250, 239, 202);
+}
+
+/* footer */
+footer {
+    background-color: black;
+    margin-top: -7px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 85px;
+    color: whitesmoke;
+}
+
+footer p {
+    margin-top: 10px;
+    position: relative;
+    border: 2px solid whitesmoke;
+}

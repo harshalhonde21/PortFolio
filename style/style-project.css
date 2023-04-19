@@ -1,0 +1,225 @@
+/* my project page css style by design by harshal */
+
+body {
+  background-color: black;
+}
+
+.services-1 h1 {
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-top: 87px;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.box1-section1 {
+  display: flex;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+
+.service-section-1-box1,
+.service-section-1-box2,
+.service-section-1-box3 {
+  position: relative;
+  height: 355px;
+  width: 350px;
+  border: 2px solid rgb(21, 222, 202);
+  border-radius: 35px;
+  margin-left: 30px;
+  background-color: rgb(43, 41, 39);
+  -webkit-box-shadow: 1px 6px 36px 3px rgba(112, 208, 219, 1);
+  -moz-box-shadow: 1px 6px 36px 3px rgba(112, 208, 219, 1);
+  box-shadow: 1px 6px 36px 3px rgba(112, 208, 219, 1);
+  overflow: none;
+}
+
+.service-section-1-box1 h2,
+.service-section-1-box2 h2,
+.service-section-1-box3 h2 {
+  text-align: center;
+  align-items: center;
+  color: aqua;
+  margin-top: 18px;
+  font-size: 30px;
+}
+
+.service-section-1-box1 p,
+.service-section-1-box2 p,
+.service-section-1-box3 p {
+  color: whitesmoke;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid red; */
+  position: relative;
+  top: -15%;
+}
+
+.service-button1,
+.service-button2,
+.service-button3 {
+  text-decoration: none;
+  padding: 8px;
+  color: rgb(14, 14, 14);
+  background-color: aqua;
+  border-radius: 12px;
+  border: 2px solid aqua;
+  /* margin-left: 130px; */
+}
+
+.service-button1:hover,
+.service-button2:hover,
+.service-button3:hover {
+  border: 3px solid rgb(2, 251, 251);
+  color: white;
+  background-color: rgb(43, 41, 39);
+}
+
+.service-section-1-box1 a {
+  position: relative;
+  top: -20%;
+  left: 40%;
+}
+
+.service-section-1-box2 a {
+  position: relative;
+  top: -22%;
+  left: 40%;
+}
+
+.service-section-1-box3 a {
+  position: relative;
+  top: -12%;
+  left: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+  .box1-section1 {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .service-section-1-box1,
+  .service-section-1-box2,
+  .service-section-1-box3 {
+    width: 90%;
+    margin: 29px auto;
+    height: 205px;
+  }
+
+  .service-section-1-box1 h2,
+  .service-section-1-box2 h2,
+  .service-section-1-box3 h2 {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .service-section-1-box1 p,
+  .service-section-1-box2 p,
+  .service-section-1-box3 p {
+    font-size: 18px;
+    margin-top: 1px;
+  }
+
+  .service-section-1-box1 a,
+  .service-section-1-box2 a,
+  .service-section-1-box3 a {
+    position: relative;
+    top: -15%;
+    left: 40%;
+    margin-top: -30px;
+  }
+}
+
+/* For screens between 768px and 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .box1-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .service-section-1-box1,
+  .service-section-1-box2,
+  .service-section-1-box3 {
+    width: 40%;
+    margin: 20px;
+    height: auto;
+  }
+
+  .service-section-1-box1 h2,
+  .service-section-1-box2 h2,
+  .service-section-1-box3 h2 {
+    font-size: 26px;
+    margin-top: 16px;
+  }
+
+  .service-section-1-box1 p,
+  .service-section-1-box2 p,
+  .service-section-1-box3 p {
+    font-size: 20px;
+  }
+
+  .service-section-1-box1 a,
+  .service-section-1-box2 a,
+  .service-section-1-box3 a {
+    position: relative;
+    top: -18%;
+    left: 40%;
+  }
+}
+
+/* For screens larger than 1023px */
+@media only screen and (min-width: 1024px) {
+  .box1-section1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+    margin-top: 50px;
+  }
+
+  .service-section-1-box1,
+  .service-section-1-box2,
+  .service-section-1-box3 {
+    width: 350px;
+    margin: 0 40px;
+    height: auto;
+  }
+
+  .service-section-1-box1 h2,
+  .service-section-1-box2 h2,
+  .service-section-1-box3 h2 {
+    font-size: 30px;
+    margin-top: 18px;
+  }
+
+  .service-section-1-box1 p,
+  .service-section-1-box2 p,
+  .service-section-1-box3 p {
+    font-size: 30px;
+    top: -15%;
+  }
+
+  .service-section-1-box1 a,
+  .service-section-1-box2 a,
+  .service-section-1-box3 a {
+    position: relative;
+    top: -22%;
+    left: 40%;
+  }
+}
+
+footer svg {
+  height: 40px;
+  width: 42px;
+  border: 2px solid white;
+  background-color: aqua;
+  border-radius: 40px;
+  transform: rotate(-0.25turn);
+  /* margin-top: -200px; */
+}
+
+/* my project page css style by design by harshal */

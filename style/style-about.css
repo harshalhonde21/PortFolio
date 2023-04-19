@@ -1,0 +1,97 @@
+/* my about page css style by design by harshal */
+body {
+    background-color: black;
+  }
+  
+  #sec-1 h1 {
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #sec-1 h2 {
+    color: whitesmoke;
+    margin-left: 700px;
+    /* margin-bottom: 153px; */
+    font-size: 35px;
+    margin-top: -330px;
+  }
+  
+  #sec-1 p {
+    color: whitesmoke;
+    margin-left: 700px;
+    font-size: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .box-sec-1 {
+    margin-top: 100px;
+    border: 2px solid rgb(115, 235, 254);
+    height: 430px;
+    width: 365px;
+    margin-left: 101px;
+    box-shadow: rgba(3, 238, 218, 0.442) 0px 54px 55px,
+      rgba(6, 245, 229, 0.713) 0px -12px 30px, rgb(6, 231, 235) 0px 4px 6px,
+      rgba(6, 229, 245, 0.17) 0px 12px 13px,
+      rgba(10, 234, 219, 0.672) 0px -3px 5px;
+  }
+  
+  .img-2 {
+    height: 425px;
+    width: 402px;
+    opacity: 0.5;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  /* Styles for screens smaller than 768px (tablets and mobiles) */
+  @media (max-width: 767px) {
+    #sec-1 h1 {
+      font-size: 30px;
+    }
+  
+    #sec-1 h2,
+    #sec-1 p {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .box-sec-1 {
+      margin: 50px auto;
+      width: 80%;
+      height: auto;
+      border: none;
+      box-shadow: rgba(3, 238, 218, 0.442) 0px 54px 55px,
+        rgba(6, 245, 229, 0.713) 0px -12px 30px, rgb(6, 231, 235) 0px 4px 6px,
+        rgba(6, 229, 245, 0.17) 0px 12px 13px,
+        rgba(10, 234, 219, 0.672) 0px -3px 5px;
+    }
+  
+    .img-2 {
+      height: auto;
+      width: 100%;
+      max-width: 400px;
+      opacity: 1;
+    }
+  }
+  
+  span {
+    color: aqua;
+  }
+  
+  footer svg {
+    height: 40px;
+    width: 42px;
+    border: 2px solid white;
+    background-color: aqua;
+    border-radius: 40px;
+    transform: rotate(-0.25turn);
+  }
+  
+  /* my about page css style by design by harshal */

@@ -1,0 +1,215 @@
+/* my main page css style top page design by harshal  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(0, 0, 0);
+}
+
+.navbar {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo-1 {
+  color: whitesmoke;
+  font-size: 37px;
+}
+
+ul {
+  display: flex;
+  /* flex-direction: column; */
+  /* make list items stack vertically */
+  align-items: center;
+  /* center the list items */
+  justify-content: center;
+  /* center the entire list */
+  height: 100%;
+  /* make the list take up the entire height of the navbar */
+  margin: 0;
+  /* remove the default margin */
+}
+
+ul li {
+  margin: 8px;
+  list-style: none;
+}
+
+ul li a {
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(10, 200, 243);
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+ul li a:hover {
+  border: 3px solid rgb(115, 235, 254);
+  border-radius: 15px;
+  color: rgb(7, 7, 7);
+  font-size: 20px;
+  font-weight: bold;
+  color: aqua;
+  background-color: rgb(10, 93, 105);
+  box-shadow: rgba(62, 150, 146, 0.25) 0px 14px 28px,
+    rgba(10, 115, 123, 0.22) 0px 10px 10px;
+    text-decoration: none;
+}
+
+span {
+  color: rgb(5, 213, 245);
+}
+
+.btn {
+  border: 3px solid rgb(66, 232, 244);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: transform 0.4s;
+}
+
+.btn:hover {
+  background-color: rgb(115, 235, 254);
+  color: black;
+  box-shadow: rgba(70, 149, 159, 0.3) 0px 19px 38px,
+    rgba(17, 128, 165, 0.22) 0px 15px 12px;
+  /* font-size: 18px; */
+  transform: scale(1, 1.1);
+  border: 5px solid rgb(7, 66, 75);
+}
+
+.title {
+  color: whitesmoke;
+}
+
+.title h5 {
+  margin-top: 100px;
+  margin-left: 200px;
+  /* border: 2px solid red; */
+  /* margin-right: 1100px; */
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.title h1 {
+  /* margin-right: 761px; */
+  /* border: 2px solid red; */
+  margin-left: 198px;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.title p {
+  margin-left: 198px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 895px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-1 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ul li {
+    margin: 0;
+  }
+
+  ul li a {
+    padding: 10px 0;
+    margin-left: 10px;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
+  .title h5,
+  .title h1,
+  .title p {
+    margin-left: 100px;
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li {
+    margin-top: 15px;
+  }
+
+  li:last-child {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 894px) {
+  .img-1 {
+    display: none;
+  }
+}
+
+.img {
+  border: 10px solid rgb(115, 235, 254);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  margin-top: -238px;
+}
+.img-1 {
+  border: 10px solid rgb(115, 235, 254);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: relative;
+  /* left: 50%;
+    margin-top: -238px; */
+}
+
+/* my main page css style top page design by harshal  */
+
+
+
+
+
+
+
+
+
